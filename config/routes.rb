@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  
-  root to: 'blogs#index'
+    
+  root to: 'tops#index'
   
   resources :blogs do
     collection do

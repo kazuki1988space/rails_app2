@@ -1,5 +1,9 @@
-<h1>ブログ詳細画面</h1>
-<p>タイトル: <%= @blog.title %></p>
-<p>内容: <%= @blog.content %></p>
+<div class="mainContainer">
+  <h1 class="pageTitle blogShow">ブログ詳細画面</h1>
+  <p>タイトル: <%= @blog.title %></p>
+  <p>内容: <%= @blog.content %></p>
 
-<%= link_to "ブログ一覧画面へ戻る", blogs_path %>
+  <div class="page-link toBlogIndex">
+  <%= link_to "ブログ一覧画面へ戻る", blogs_path, class: 'btn btn-info'  %>
+  </div>
+</div>

@@ -1,23 +1,29 @@
-<h1>ブログ一覧</h1>
+<div class="mainContainer">
+  <h1 class="pageTitle blogIndex">ブログ一覧</h1>
 
-<p><%= notice %></p>
+  <p class="notice-comment"><%= notice %></p>
 
-<table>
-    <tr>
-        <th>タイトル</th>
-        <th>内容</th></th>
-    </tr>
+  <div class="container">
+    <div class="row">
+      <% @blogs.each do |blog| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="post-preview">
+              <h2 class="blog-title"><%= blog.title %></h2>
+              <h3 class="blog-content"><%= blog.content %></h3>
+              <ul class="blog-links">
+                <li><%= link_to "詳細", blog_path(blog.id), class: 'btn btn-default' %></li>
+                <li><%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-info' %></li>
+                <li><%= link_to "削除", blog_path(blog.id), method: :delete,
+                 data: { confirm: '削除していいですか？' }, class: 'btn btn-danger' %></li>
+              </ul>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 
-<% @blogs.each do |blog| %>
-<tr>
-    <td><%= blog.title %></td>
-    <td><%= blog.content %></td>
-    <td><%= link_to "詳細を確認する", blog_path(blog.id) %></td>
-    <td><%= link_to "ブログを編集する", edit_blog_path(blog.id) %></td>
-    <td><%= link_to "ブログを削除する", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></td>
-</tr>
-<% end %>
+  <div class="page-link toNewBlog">
+  <%= link_to "新しくブログを作成する", new_blog_path, class: 'btn btn-default' %>
+  </div>
 
-</table>
-
-<%= link_to "新しくブログを作成する", new_blog_path %>
+</div>

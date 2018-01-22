@@ -11,17 +11,19 @@
 </div>
 <% end %>
 
-<div class="blog_title">
+<div class="blog-title">
     <%= form.label :title %>
     <%= form.text_field :title %>
 </div>
-<div class="blog_content">
+<div class="blog-content">
     <%= form.label :content %>
     <%= form.text_field :content %>
 </div>
 
-<%= form.submit %>
+<%= form.submit class: 'btn btn-info' %>
 
 <% end %>
 
-<%= link_to "ブログ一覧画面へ戻る", blogs_path %>
+<div class="page-link toBlogIndex">
+<%= link_to "ブログ一覧画面へ戻る", blogs_path, class: 'btn btn-default' %>
+</div>
