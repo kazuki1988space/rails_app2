@@ -8,7 +8,8 @@
   border: 1px solid #ddd;
 }
 
-.pageTitle, .blog-title, .blog-content, .blog-links, .confirm_sentence, .confirm_container{
+.pageTitle, .blog-title, .blog-content, .blog-links,
+.show_container p, .confirm_sentence, .confirm_container{
   color: #ddd;
   text-align: center;
   padding: 0;
@@ -37,9 +38,9 @@
 }
 
 .page-link{
-  margin: 20px auto 40px;
+  margin: 20px auto 120px;
 }
 
-.confirm_container, .confirm_container p{
+.show_container, .show_container p, .confirm_container, .confirm_container p{
   margin: 30px auto;
 }
