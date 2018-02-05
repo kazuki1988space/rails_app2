@@ -1,11 +1,21 @@
 <div class="mainContainer">
-  <h1 class="pageTitle blogShow">ブログ詳細画面</h1>
-  <div class="show_container">
-    <p>タイトル: <%= @blog.title %></p>
-    <p>内容: <%= @blog.content %></p>
+  <h1 class="pageTitle blogShow">ブログ詳細</h1>
+  <div class="container blogShow">
+    <div class="form blogShow">
+      <table>
+        <tr>
+          <th><p>タイトル：</p></th>
+          <td><p><%= @blog.title %></p></td>
+        </tr>
+        <tr>
+          <th><p>記事：</p></th>
+          <td><p><%= @blog.content %></p></td>
+        </tr>
+      </table>
+    </div>
   </div>
 
   <div class="page-link toBlogIndex">
-  <%= link_to "ブログ一覧画面へ戻る", blogs_path, class: 'btn btn-info'  %>
+  <%= link_to "ブログ一覧へ戻る", blogs_path, class: 'btn btn-default'  %>
   </div>
 </div>

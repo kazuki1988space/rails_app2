@@ -1,0 +1,65 @@
+.form.logIn{
+  width: 100%;
+}
+
+.form table{
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: separate;
+}
+
+.form table tr th{
+  width: 35%;
+  text-align: right;
+  color: #ddd;
+}
+
+.form.userShow table tr th, .form.blogShow table tr th,
+.form.createConfirm table tr th{
+  width: 45%;
+  text-align: right;
+  color: #ddd;
+}
+
+.form table tr th label{
+  padding: 20px 0 0;
+}
+
+.form table tr td{
+  width: 65%;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.form.userShow table tr td, .form.blogShow table tr td,
+.form.createConfirm table tr td{
+  width: 55%;
+  padding-left: 5%;
+  text-align: left;
+}
+
+.form table tr td input{
+  padding: 10px 0 0;
+  background-color: #000;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #fff;
+}
+
+.form table tr td input:focus{
+  background-color: #000;
+  outline: none;
+}
+
+.form.userShow table tr th p, .form.blogShow table tr th p,
+.form.createConfirm table tr th p{
+  padding: 10px 0 0;
+}
+
+.form.userShow table tr td p, .form.blogShow table tr td p,
+.form.createConfirm table tr td p{
+  padding: 10px 0 0;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}

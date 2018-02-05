@@ -15,6 +15,14 @@
   padding: 0;
 }
 
+.confirm_sentence{
+  margin: 0 0 30px;
+}
+
+.pageTitle{
+  margin: 30px auto 50px;
+}
+
 .notice-comment, .error_explanation{
   color: red;
 }
@@ -38,9 +46,37 @@
 }
 
 .page-link{
-  margin: 20px auto 120px;
+  margin: 50px auto;
+}
+
+.page-link.toNewBlog{
+  margin: 60px auto 150px;
 }
 
 .show_container, .show_container p, .confirm_container, .confirm_container p{
   margin: 30px auto;
+}
+
+.form table tr th p{
+  padding: 20px 0 0;
+}
+
+.form table tr td p{
+  padding: 20px 0 0;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+.form table tr td textarea{
+  padding: 10px 0 0;
+  background-color: #000;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #fff;
+}
+
+.form table tr td textarea:focus{
+  background-color: #000;
+  outline: none;
 }

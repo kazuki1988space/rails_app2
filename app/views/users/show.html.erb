@@ -1,0 +1,16 @@
+<div class="mainContainer">
+  <h1 class="pageTitle userShow"><%= @user.name %>さんのページ</h1>
+  <div class="container userShow">
+    <div class="form userShow">
+      <table>
+        <tr>
+          <th>メールアドレス：</th>
+          <td><p><%= @user.email %></p></td>
+        </tr>
+      </table>
+    </div>
+    <div class="page-link toBlogIndex">
+    <%= link_to "ブログ一覧へ", blogs_path, class: 'btn btn-default'  %>
+    </div>
+  </div>
+</div>

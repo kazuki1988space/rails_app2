@@ -2,14 +2,24 @@
   <h1 class="pageTitle createConfirm">登録内容確認</h1>
   <h3 class="confirm_sentence">以下の内容で送信しますか？</h3>
 
-  <div class="confirm_container">
-    <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
+  <div class="container createConfirm">
+    <div class="form createConfirm">
+      <table>
+      <%= form_with(model: @blog, url: blogs_path, local: true) do |form| %>
       <%= form.hidden_field :title %>
       <%= form.hidden_field :content %>
-
-      <p>title:<%= @blog.title %></p>
-      <p>content:<%= @blog.content %></p>
-      <%= form.submit  "登録", class: 'btn btn-info' %>
+        <tr>
+          <th><p>タイトル：</p></th>
+          <td><p><%= @blog.title %></p></td>
+        </tr>
+        <tr>
+          <th><p>記事：</p></th>
+          <td><p><%= @blog.content %></p></td>
+        </tr>
+      </table>
+      <div class="page-link toBlogRegist">
+      <%= form.submit  "登録", class: 'btn btn-warning' %>
+      </div>
     <% end %>
   </div>
 
