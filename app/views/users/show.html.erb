@@ -1,16 +1,37 @@
 <div class="mainContainer">
-  <h1 class="pageTitle userShow"><%= @user.name %>さんのページ</h1>
+  <h1 class="pageTitle userShow">マイページ</h1>
   <div class="container userShow">
-    <div class="form userShow">
-      <table>
-        <tr>
-          <th>メールアドレス：</th>
-          <td><p><%= @user.email %></p></td>
-        </tr>
-      </table>
-    </div>
-    <div class="page-link toBlogIndex">
+      <div class="form view userShow">
+        <table>
+          <tr>
+            <th colspan="2" class="table_title">プロフィール</th>
+          </tr>
+          <tr>
+            <th>名前</th>
+            <td><%= @user.name %></td>
+          </tr>
+          <tr>
+            <th>メールアドレス</th>
+            <td><%= @user.email %></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="form view userFavoriteShow">
+        <table>
+          <tr>
+            <th colspan="2" class="table_title">お気に入りブログ一覧</th>
+          </tr>
+          <% current_user.favorite_blogs.each do |blog| %>
+            <tr>
+              <th class="blog_title"><%= blog.title %></th>
+              <td><%= link_to "ブログ詳細", blog_path(blog.id), class: 'btn btn-info' %></td>
+            </tr>
+          <% end %>
+        </table>
+      </div>
+  </div>
+  <div class="page-link toBlogIndex">
     <%= link_to "ブログ一覧へ", blogs_path, class: 'btn btn-default'  %>
-    </div>
   </div>
 </div>

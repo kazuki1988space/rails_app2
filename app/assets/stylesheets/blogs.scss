@@ -3,12 +3,22 @@
 }
 
 .post-preview{
-  margin: 5px auto;
-  padding-bottom: 10px;
-  border: 1px solid #ddd;
+  margin: 15px auto;
+  padding: 30px;
+  height: 360px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  position: relative;
+  background-color: #ccc;
 }
 
-.pageTitle, .blog-title, .blog-content, .blog-links,
+.blog-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.pageTitle, .blog-title, .blog-content, .blog-user, .blog-links,
 .show_container p, .confirm_sentence, .confirm_container{
   color: #ddd;
   text-align: center;
@@ -28,29 +38,95 @@
 }
 
 .blog-title{
-  margin: 20px 0;
   word-break: break-all;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 3rem;
+  color: #000;
+  text-align: left;
 }
 
 .blog-content{
-  margin: 30px 0;
   word-break: break-all;
+  padding: 20px 0;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  font-size: 1.7rem;
+  color: #000;
+  text-align: left;
+  border-top: 1px dotted #000;
+  overflow: hidden;
 }
 
-.blog-links li{
+.blog-content:before, .blog-content:after{
+  position: absolute;
+  background-color: #ccc;
+}
+
+.blog-content:before{
+  content: "...";
+  bottom: 0;
+  right: 7px;
+}
+
+.blog-content:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+
+.blog-user{
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+  position: absolute;
+  width: 100%;
+  top: 190px;
+  right: 10px;
+  text-align: right;
+  font-size: 1rem;
+  font-style: oblique;
+  color: #000;
+  border-top: 1px dotted #000;
+}
+
+.blog-user span{
+  font-size: 1.5rem;
+}
+
+.blog-links{
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.blog-links ul{
+  width: 100%;
+  padding: 0;
+}
+
+.blog-links ul li{
   display: inline-block;
 }
 
 .blog-links li + li{
-  padding-left: 20px;
+  padding-left: 10%;
 }
 
 .page-link{
-  margin: 50px auto;
+  margin: 50px auto 150px;
 }
 
-.page-link.toNewBlog{
-  margin: 60px auto 150px;
+.page-link.toConfirmBlog, .page-link.favorites{
+  margin: 50px auto;
 }
 
 .show_container, .show_container p, .confirm_container, .confirm_container p{

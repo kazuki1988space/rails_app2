@@ -4,41 +4,27 @@
 
 .form table{
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   border-collapse: separate;
 }
 
-.form table tr th{
-  width: 35%;
+.form.submit table tr th{
+  width: 40%;
   text-align: right;
   color: #ddd;
 }
 
-.form.userShow table tr th, .form.blogShow table tr th,
-.form.createConfirm table tr th{
-  width: 45%;
-  text-align: right;
-  color: #ddd;
-}
-
-.form table tr th label{
+.form.submit table tr th label{
   padding: 20px 0 0;
 }
 
-.form table tr td{
-  width: 65%;
-  padding-left: 5%;
+.form.submit table tr td{
+  width: 60%;
+  padding-left: 3%;
   text-align: left;
 }
 
-.form.userShow table tr td, .form.blogShow table tr td,
-.form.createConfirm table tr td{
-  width: 55%;
-  padding-left: 5%;
-  text-align: left;
-}
-
-.form table tr td input{
+.form.submit table tr td input{
   padding: 10px 0 0;
   background-color: #000;
   border: none;
@@ -46,20 +32,148 @@
   color: #fff;
 }
 
-.form table tr td input:focus{
+.form.submit.newBlog table th, .form.submit.newBlog table td
+, .form.view table th, .form.view table td{
+  border: 1px #ddd solid;
+}
+
+.form.submit.newBlog table tr th{
+  width: 30%;
+  text-align: center;
+  color: #ddd;
+}
+
+.form.submit.newBlog table tr th label{
+  padding: 10px 0;
+}
+
+.form.submit.newBlog table tr td{
+  width: 70%;
+  padding: 0 5%;
+  text-align: left;
+}
+
+.form.submit.newBlog table tr td textarea{
+  height: 200px;
+}
+
+.form.submit.newBlog table tr td input, .form.submit.newBlog table tr td textarea{
+  margin: 0 auto;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+.form.submit table tr td input:focus{
   background-color: #000;
   outline: none;
 }
 
-.form.userShow table tr th p, .form.blogShow table tr th p,
-.form.createConfirm table tr th p{
-  padding: 10px 0 0;
+.form.view.userShow{
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 60%;
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
-.form.userShow table tr td p, .form.blogShow table tr td p,
-.form.createConfirm table tr td p{
-  padding: 10px 0 0;
-  background-color: #000;
+
+.form.view table, .form.view table th, .form.view table td{
   border: none;
-  color: #fff;
+}
+
+.table_title{
+  height: 70px;
+  font-size: 2.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.form.view table tr th{
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  color: #000;
+}
+
+.form.view table tr td{
+  width: 50%;
+  padding: 0 5%;
+  max-height: 50px;
+  text-align: left;
+  color: #000;
+}
+
+.form.view.userFavoriteShow{
+  margin: 60px auto 0;
+  padding: 20px 0;
+  width: 60%;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.form.view.userFavoriteShow table tr th.blog_title{
+  width: 40%;
+  height: 50px;
+  text-align: right;
+  color: #000;
+}
+
+.form.view.userFavoriteShow table tr td{
+  width: 60%;
+  padding-left: 20%;
+  text-align: left;
+  color: #000;
+}
+
+.container.blogShow, .container.createConfirm{
+  margin: 20px auto 0;
+  padding: 40px;
+  width: 60%;
+  min-height: 100px;
+  max-height: 1000px;
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.container.blogShow .blogShow-title, .container.createConfirm .createConfirm-title{
+  word-break: break-all;
+  padding: 0;
+  width: 100%;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #000;
+  text-align: left;
+}
+
+.container.blogShow .blogShow-content, .container.createConfirm .createConfirm-content{
+  word-break: break-all;
+  margin: 30px 0;
+  padding: 30px 0;
+  width: 100%;
+  min-height: 50px;
+  max-height: 800px;
+  font-size: 2rem;
+  color: #000;
+  text-align: left;
+  border-top: 1px dotted #000;
+}
+
+.container.blogShow .blogShow-content{
+  border-bottom: 1px dotted #000;
+}
+
+.container.blogShow .blogShow-user{
+  width: 100%;
+  font-size: 1rem;
+  font-style: oblique;
+  color: #000;
+  text-align: right;
+}
+
+.container.blogShow .blogShow-user span{
+  font-size: 1.5rem;
 }

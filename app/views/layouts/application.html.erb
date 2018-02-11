@@ -30,7 +30,7 @@
               <li><a href="/blogs#index">ブログ一覧</a></li>
               <li><a href="#">お問い合わせ</a></li>
               <% if logged_in? %>
-                <li><%= link_to "マイプロフィール", user_path(current_user.id) %></a></li>
+                <li><%= link_to "マイページ", user_path(current_user.id) %></a></li>
                 <li><%= link_to "ログアウト", session_path(current_user.id), method: :delete %></li>
               <% else %>
                 <li><%= link_to "ユーザ新規登録", new_user_path %></li>
