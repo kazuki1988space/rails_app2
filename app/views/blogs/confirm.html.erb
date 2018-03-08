@@ -8,6 +8,8 @@
     <div class="container createConfirm">
       <div class="createConfirm-title"><%= @blog.title %></div>
       <div class="createConfirm-content"><%= @blog.content %></div>
+      <div class="createConfirm-image"><%= image_tag(@blog.image.url) if @blog.image.present? %></div>
+      <%= hidden_field_tag :"cache[image]",@blog.image.cache_name %>
     </div>
     <div class="page-link toBlogRegist">
       <%= form.submit  "登録", class: 'btn btn-warning' %>

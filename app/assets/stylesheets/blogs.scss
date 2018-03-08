@@ -30,7 +30,7 @@
 }
 
 .pageTitle{
-  margin: 30px auto 50px;
+  margin: 50px auto;
 }
 
 .notice-comment, .error_explanation{
@@ -125,8 +125,12 @@
   margin: 50px auto 150px;
 }
 
-.page-link.toConfirmBlog, .page-link.favorites{
+.page-link.toConfirmBlog, .page-link.favorites, .page-link.toBlogRegist{
   margin: 50px auto;
+}
+
+.page-link.toEditProfile{
+  margin: 30px auto 10px;
 }
 
 .show_container, .show_container p, .confirm_container, .confirm_container p{
@@ -150,6 +154,7 @@
   border: none;
   border-bottom: 2px solid #ddd;
   color: #fff;
+  resize: none;
 }
 
 .form table tr td textarea:focus{

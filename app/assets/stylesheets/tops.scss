@@ -67,8 +67,17 @@ header .navbar.navbar-default{
   border: none;
 }
 
+header .navbar-header .navbar-brand{
+  float: left;
+  font-size: 22px;
+}
+
 header .container-fluid{
   background-color: #020;
+}
+
+header .navbar-collapse{
+  float: right;
 }
 
 .topContaier .btn-warning{
@@ -77,9 +86,13 @@ header .container-fluid{
 }
 
 .flash_msg{
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: center;
   color: red;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  right: 0;
 }
 
 footer{

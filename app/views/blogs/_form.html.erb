@@ -21,6 +21,11 @@
       <th><%= form.label :記事 %></th>
       <td><%= form.text_area :content %></td>
     </tr>
+    <tr>
+      <th><%= form.label :画像 %></th>
+      <td><%= form.file_field :image, id: :blog_image %></td>
+      <%= form.hidden_field :image_cache %>
+    </tr>
   </table>
 
   <div class="page-link toConfirmBlog">

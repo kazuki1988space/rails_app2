@@ -9,7 +9,7 @@
 }
 
 .form.submit table tr th{
-  width: 40%;
+  width: 35%;
   text-align: right;
   color: #ddd;
 }
@@ -19,12 +19,13 @@
 }
 
 .form.submit table tr td{
-  width: 60%;
+  width: 65%;
   padding-left: 3%;
   text-align: left;
 }
 
 .form.submit table tr td input{
+  width: 50%;
   padding: 10px 0 0;
   background-color: #000;
   border: none;
@@ -75,7 +76,7 @@
 .form.view.userShow{
   margin: 0 auto;
   padding: 20px 0;
-  width: 60%;
+  width: 70%;
   background-color: #ccc;
   border-radius: 10px;
 }
@@ -107,10 +108,34 @@
   color: #000;
 }
 
+.detail_profile{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.detail_profile tbody, .detail_profile tbody tr{
+  width: 100%;
+}
+
+.detail_profile tbody tr th{
+  width: 50%;
+  text-align: left;
+  min-width: 130px;
+}
+
+.detail_profile tbody tr td{
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  max-width: 350px;
+  word-wrap: break-word;
+}
+
 .form.view.userFavoriteShow{
   margin: 60px auto 0;
   padding: 20px 0;
-  width: 60%;
+  width: 70%;
   background-color: #ccc;
   border-radius: 10px;
 }

@@ -3,6 +3,7 @@
   <div class="container blogShow">
       <div class="blogShow-title"><%= @blog.title %></div>
       <div class="blogShow-content"><%= @blog.content %></div>
+      <div class="blogShow-image"><%= image_tag @blog.image %></div>
       <div class="blogShow-user">Created By <span><%= @blog.user.name %></span></div>
   </div>
 
