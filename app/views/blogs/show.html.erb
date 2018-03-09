@@ -5,6 +5,7 @@
       <div class="blogShow-content"><%= @blog.content %></div>
       <div class="blogShow-image"><%= image_tag(@blog.image.url) if @blog.image.present? %></div>
       <div class="blogShow-user">Created By <span><%= @blog.user.name %></span></div>
+      <div class="blogShow-icon"><%= image_tag(@blog.user.image.thumb.url) if @blog.user.image.present? %></span></div>
   </div>
 
   <% unless @blog.user == current_user %>

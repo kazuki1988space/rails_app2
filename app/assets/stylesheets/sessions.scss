@@ -191,8 +191,19 @@
   border-bottom: 1px dotted #000;
 }
 
+.container.blogShow .blogShow-image{
+  padding: 0 0 30px;
+  border-bottom: 1px dotted #000;
+}
+
+.blogShow-user, .blogShow-icon{
+  display: inline-block;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
 .container.blogShow .blogShow-user{
-  width: 100%;
+  width: 80%;
   font-size: 1rem;
   font-style: oblique;
   color: #000;
@@ -201,4 +212,13 @@
 
 .container.blogShow .blogShow-user span{
   font-size: 1.5rem;
+}
+
+.container.blogShow .blogShow-icon{
+  width: 15%;
+}
+
+.container.blogShow .blogShow-icon img{
+  max-width: 70px;
+  max-height: 70px;
 }
